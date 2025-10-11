@@ -4,10 +4,6 @@ A **modern and customizable portfolio website** built with **React, Vite, Tailwi
 This template can be used by **anyone** to showcase their projects, skills, and achievements in a clean and responsive way.  
 
 ---
-
-## 🌐 Live Demo
-**URL**: [https://your-username.github.io/your-portfolio-repo](https://your-username.github.io/your-portfolio-repo)
-
 ---
 
 ## ✨ Features
