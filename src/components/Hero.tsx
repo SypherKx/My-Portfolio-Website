@@ -73,10 +73,10 @@ export const Hero = () => {
           {/* Main title with gradient text */}
           <h1 
             ref={titleRef}
-            className="text-5xl md:text-7xl font-display font-bold leading-tight"
+            className="text-4xl sm:text-5xl md:text-7xl font-display font-bold leading-tight"
           >
             Hi, I'm{" "}
-            <span className="gradient-text">
+            <span className="gradient-text whitespace-nowrap">
               Karan Pratap Singh
             </span>
           </h1>
