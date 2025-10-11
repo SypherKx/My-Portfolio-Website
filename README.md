@@ -4,7 +4,6 @@ A **modern and customizable portfolio website** built with **React, Vite, Tailwi
 This template can be used by **anyone** to showcase their projects, skills, and achievements in a clean and responsive way.  
 
 ---
----
 
 ## ✨ Features
 
