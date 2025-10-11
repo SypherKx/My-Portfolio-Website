@@ -1,0 +1,223 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Portfolio Design System - ML/Fintech Theme
+All colors MUST be HSL for perfect theme switching.
+*/
+
+@layer base {
+  :root {
+    /* Brand Colors - Professional Tech/Finance */
+    --background: 0 0% 100%;
+    --foreground: 220 15% 15%;
+    
+    /* Surface Colors */
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 15%;
+    --card-hover: 220 20% 98%;
+    
+    /* Interactive Elements */
+    --primary: 245 75% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 245 75% 65%;
+    
+    --secondary: 220 15% 96%;
+    --secondary-foreground: 220 15% 15%;
+    --secondary-hover: 220 15% 92%;
+    
+    /* Accent Colors */
+    --accent: 270 75% 65%;
+    --accent-foreground: 0 0% 100%;
+    --accent-hover: 270 75% 70%;
+    
+    /* Status Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Neutral Colors */
+    --muted: 220 15% 96%;
+    --muted-foreground: 220 10% 46%;
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 245 75% 60%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(245 75% 60%) 0%, hsl(270 75% 65%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(245 75% 60% / 0.1) 0%, hsl(270 75% 65% / 0.1) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(220 20% 98%) 100%);
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px hsl(220 15% 15% / 0.04);
+    --shadow-md: 0 4px 12px hsl(220 15% 15% / 0.08);
+    --shadow-lg: 0 8px 25px hsl(220 15% 15% / 0.12);
+    --shadow-hero: 0 20px 40px hsl(245 75% 60% / 0.15);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark Theme - Professional Tech Look */
+    --background: 220 25% 8%;
+    --foreground: 220 15% 95%;
+    
+    /* Surface Colors */
+    --card: 220 25% 12%;
+    --card-foreground: 220 15% 95%;
+    --card-hover: 220 25% 16%;
+    
+    /* Interactive Elements */
+    --primary: 245 85% 70%;
+    --primary-foreground: 220 25% 8%;
+    --primary-hover: 245 85% 75%;
+    
+    --secondary: 220 25% 16%;
+    --secondary-foreground: 220 15% 95%;
+    --secondary-hover: 220 25% 20%;
+    
+    /* Accent Colors */
+    --accent: 270 85% 75%;
+    --accent-foreground: 220 25% 8%;
+    --accent-hover: 270 85% 80%;
+    
+    /* Status Colors */
+    --success: 142 76% 46%;
+    --success-foreground: 220 25% 8%;
+    --warning: 38 92% 60%;
+    --warning-foreground: 220 25% 8%;
+    --destructive: 0 84% 70%;
+    --destructive-foreground: 220 25% 8%;
+    
+    /* Neutral Colors */
+    --muted: 220 25% 16%;
+    --muted-foreground: 220 15% 65%;
+    --border: 220 25% 20%;
+    --input: 220 25% 16%;
+    --ring: 245 85% 70%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(245 85% 70%) 0%, hsl(270 85% 75%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(245 85% 70% / 0.1) 0%, hsl(270 85% 75% / 0.1) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(220 25% 12%) 0%, hsl(220 25% 16%) 100%);
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px hsl(220 25% 8% / 0.3);
+    --shadow-md: 0 4px 12px hsl(220 25% 8% / 0.4);
+    --shadow-lg: 0 8px 25px hsl(220 25% 8% / 0.5);
+    --shadow-hero: 0 20px 40px hsl(245 85% 70% / 0.2);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    scroll-behavior: smooth;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom Animations & Utilities */
+@layer utilities {
+  .animate-fade-up {
+    animation: fade-up 0.6s ease-out;
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out;
+  }
+  
+  .animate-slide-right {
+    animation: slide-right 0.6s ease-out;
+  }
+  
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .glass-effect {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+  
+  .card-hover {
+    transition: var(--transition-smooth);
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
