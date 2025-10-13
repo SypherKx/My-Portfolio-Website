@@ -9,9 +9,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 import stockPredictionImg from "@/assets/stock-prediction.jpg";
-import fraudDetectionImg from "@/assets/fraud-detection.jpg";
+import fraudDetectionImg from "@/assets/Untitled design (2).png";
 import creditCardFraudImg from "@/assets/credit-card-fraud-detection.jpg";
-import airQualityImg from "@/assets/crypto-optimizer.jpg";
+import airQualityImg from "@/assets/Untitled design (3).png";
 import cryptoOptimizerImg from "@/assets/crypto-optimizer.jpg";
 import creditRiskImg from "@/assets/credit-risk.jpg";
 import tradingBotImg from "@/assets/trading-bot.jpg";
@@ -32,7 +32,7 @@ const projects = [
     description: "This project leverages machine learning models to predict air quality levels based on environmental factors such as temperature, humidity, wind speed, and pollutant concentration.",
     image: airQualityImg,
     tags: ["Python", "Machine Learning", "Jupyter"],
-    github: "https://github.com/alexjohnson/air-quality-prediction",
+    github: "https://github.com/SypherKx/AQIPredictor",
     demo: null,
     featured: true
   },
