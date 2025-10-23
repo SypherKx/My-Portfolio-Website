@@ -8,6 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
+import sp500Image from '../assets/sp500-stock-prediction.jpg';
 import stockPredictionImg from "@/assets/stock-prediction.jpg";
 import fraudDetectionImg from "@/assets/Untitled design (2).png";
 import creditCardFraudImg from "@/assets/credit-card-fraud-detection.jpg";
@@ -16,7 +17,6 @@ import cryptoOptimizerImg from "@/assets/crypto-optimizer.jpg";
 import creditRiskImg from "@/assets/credit-risk.jpg";
 import tradingBotImg from "@/assets/trading-bot.jpg";
 import newsSentimentImg from "@/assets/news-sentiment.jpg";
-import sp500StockImg from "@/assets/sp500-stock-prediction.jpg";
 
 const projects = [
   {
