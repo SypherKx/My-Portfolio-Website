@@ -16,8 +16,18 @@ import cryptoOptimizerImg from "@/assets/crypto-optimizer.jpg";
 import creditRiskImg from "@/assets/credit-risk.jpg";
 import tradingBotImg from "@/assets/trading-bot.jpg";
 import newsSentimentImg from "@/assets/news-sentiment.jpg";
+import sp500StockImg from "@/assets/sp500-stock-prediction.jpg";
 
 const projects = [
+  {
+    title: "SP500 Stock Price Prediction",
+    description: "A machine learning project that predicts S&P 500 stock prices using historical market data. Includes data collection via yfinance, model training with scikit-learn, and backtesting for performance evaluation.",
+    image: sp500StockImg,
+    tags: ["Machine Learning", "Python", "Jupyter Lab"],
+    github: "https://github.com/SypherKx/SP500-Stock-Price-Prediction",
+    demo: null,
+    featured: true
+  },
   {
     title: "Credit Card Fraud Detection",
     description: "A machine learning project to detect fraudulent credit card transactions using Logistic Regression. This project includes both a Python script for training & evaluation and a Streamlit web app for interactive testing.",
