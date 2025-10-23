@@ -8,7 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-import sp500Image from '@/assets/sp500-stock-prediction.jpg';
+import sp500StockImg from '@/assets/sp500-stock-prediction.jpg';
 import stockPredictionImg from "@/assets/stock-prediction.jpg";
 import fraudDetectionImg from "@/assets/Untitled design (2).png";
 import creditCardFraudImg from "@/assets/credit-card-fraud-detection.jpg";
