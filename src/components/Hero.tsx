@@ -114,8 +114,8 @@ export const Hero = () => {
               asChild
             >
               <a 
-                href="/Karan_Pratap_Singh_Resume.pdf" 
-                download="Karan_Pratap_Singh_Resume.pdf"
+                href="/Karan_Resume.pdf" 
+                download="Karan_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
