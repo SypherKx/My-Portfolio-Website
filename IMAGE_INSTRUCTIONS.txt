@@ -1,0 +1,11 @@
+IMPORTANT: Please manually add the SP500 stock prediction image
+
+1. Save the stock market chart image (the one with green/red candlesticks and numbers) as:
+   sp500-stock-prediction.jpg
+
+2. Place it in this folder:
+   src\assets\
+
+3. The file should be named exactly: sp500-stock-prediction.jpg
+
+After adding the image, the project will display correctly with the SP500 Stock Price Prediction project at the top of your projects section.
