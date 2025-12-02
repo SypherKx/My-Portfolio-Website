@@ -8,6 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
+import aetherEyeImg from "@/assets/aether-eye.png";
 import sp500StockImg from '@/assets/sp500-stock-prediction.jpg';
 import stockPredictionImg from "@/assets/stock-prediction.jpg";
 import fraudDetectionImg from "@/assets/Untitled design (2).png";
@@ -22,7 +23,7 @@ const projects = [
   {
     title: "Aether Eye: Hybrid-Edge Surveillance",
     description: "A privacy-first surveillance system built on a hybrid-edge architecture using ESP32 and FastAPI. This project features offline AI for object and speech detection, delivering real-time alerts to a mobile app without cloud dependency.",
-    image: null,
+    image: aetherEyeImg,
     tags: ["Python", "FastAPI", "YOLOv8", "ESP32", "React Native", "WebSockets"],
     github: "https://github.com/AetherEye/AetherEye.git",
     demo: null,
@@ -93,8 +94,8 @@ export const Projects = () => {
     projectRefs.current.forEach((card, index) => {
       if (card) {
         gsap.fromTo(card,
-          { 
-            opacity: 0, 
+          {
+            opacity: 0,
             y: 60,
             scale: 0.9
           },
@@ -124,21 +125,21 @@ export const Projects = () => {
     <section id="projects" ref={sectionRef} className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 
+          <h2
             ref={titleRef}
             className="text-4xl md:text-5xl font-display font-bold mb-4"
           >
             Featured <span className="gradient-text">Projects</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A showcase of my work in machine learning, fintech, and data analytics. 
+            A showcase of my work in machine learning, fintech, and data analytics.
             Each project demonstrates different aspects of my technical skills and problem-solving approach.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div 
+            <div
               key={project.title}
               ref={(el) => setProjectRef(el, index)}
               className={`${project.featured ? 'md:col-span-2 lg:col-span-1' : ''}`}
@@ -146,8 +147,8 @@ export const Projects = () => {
               <Card className="h-full card-hover group bg-gradient-card border-0 shadow-md">
                 {project.image ? (
                   <div className="relative overflow-hidden rounded-t-lg">
-                    <img 
-                      src={project.image} 
+                    <img
+                      src={project.image}
                       alt={project.title}
                       className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                     />
@@ -167,7 +168,7 @@ export const Projects = () => {
                     )}
                   </div>
                 )}
-                
+
                 <CardHeader>
                   <CardTitle className="text-xl font-semibold group-hover:text-primary transition-colors">
                     {project.title}
@@ -180,9 +181,9 @@ export const Projects = () => {
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
-                      <Badge 
-                        key={tag} 
-                        variant="secondary" 
+                      <Badge
+                        key={tag}
+                        variant="secondary"
                         className="text-xs"
                       >
                         {tag}
@@ -193,9 +194,9 @@ export const Projects = () => {
 
                 <CardFooter className="flex gap-3">
                   {project.github ? (
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
+                    <Button
+                      variant="outline"
+                      size="sm"
                       className="flex-1"
                       asChild
                     >
@@ -205,9 +206,9 @@ export const Projects = () => {
                       </a>
                     </Button>
                   ) : (
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
+                    <Button
+                      variant="outline"
+                      size="sm"
                       className="flex-1 opacity-50 cursor-not-allowed"
                       disabled
                     >
@@ -216,8 +217,8 @@ export const Projects = () => {
                     </Button>
                   )}
                   {project.demo && (
-                    <Button 
-                      size="sm" 
+                    <Button
+                      size="sm"
                       className="flex-1 bg-gradient-primary"
                       asChild
                     >
