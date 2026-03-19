@@ -18,6 +18,7 @@ import cryptoOptimizerImg from "@/assets/crypto-optimizer.jpg";
 import creditRiskImg from "@/assets/credit-risk.jpg";
 import tradingBotImg from "@/assets/trading-bot.jpg";
 import newsSentimentImg from "@/assets/news-sentiment.jpg";
+import footprintsImg from "@/assets/footprints-logo.jpg";
 
 const projects = [
   {
@@ -54,6 +55,15 @@ const projects = [
     tags: ["Python", "Machine Learning", "Jupyter"],
     github: "https://github.com/SypherKx/AQIPredictor",
     demo: null,
+    featured: true
+  },
+  {
+    title: "FOOTPRINTS 2K26",
+    description: "The official website for our college sports fest, FOOTPRINTS 2K26. Built to showcase events, schedules, and registration details to enhance student engagement.",
+    image: footprintsImg,
+    tags: ["React", "Web Development", "Sports Fest"],
+    github: "https://github.com/SypherKx/Footprints2K26-event-.git",
+    demo: "https://footprints.ignitia.in",
     featured: true
   },
   {
