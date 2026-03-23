@@ -6,7 +6,7 @@ This template can be used by **anyone** to showcase their projects, skills, and 
 ---
 
 ## 🌐 Live Demo
-**URL**: [https://your-username.github.io/your-portfolio-repo](https://karan-portfolio01.vercel.app/)
+**URL**: (https://karan-portfolio01.vercel.app/)
 
 ---
 
